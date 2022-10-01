@@ -10,21 +10,72 @@
 
 .slider {
   display: flex;
+  gap: 16px;
   height: 400px;
-  outline: 1px solid red;
 }
 
 .slide {
+  width: 58px;
+  background: center / cover;
+  border-radius: 32px;
+  display: grid;
+  position: relative;
+  overflow: hidden;
+}
+
+.slide.active {
   width: 580px;
 }
 
+.slide::before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 100px;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.3),
+    rgba(0, 0, 0, 0.7)
+  );
+}
+
 .slide__content {
+  align-self: end;
+  color: white;
+  padding: 10px;
+  display: grid;
+  align-items: center;
+  grid-template-columns: 40px 1fr;
+  grid-gap: 8px;
+  line-height: 1.2em;
+  position: relative;
+}
+
+.slide.active.slide__content{
+  padding: 20px;
 }
 
 .slide__icon {
+  height: 40px;
+  background-color: white;
+  border-radius: 100px;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  color: #5555;
+  align-self: end;
+}
+
+.slide__icon .material-symbols-outlined {
+  font-size: calc(40px / 1.5);
 }
 
 .slide__title {
+  font-size: 18px;
+  font-weight: bold;
 }
 
 .slide__description {
