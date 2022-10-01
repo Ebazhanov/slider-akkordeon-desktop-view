@@ -1,23 +1,33 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&family=Raleway:wght@100&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200");
 
-
 .App {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
 }
 
 .slider {
+  display: flex;
+  height: 400px;
+  outline: 1px solid red;
 }
 
-.slider__slider__content {
+.slide {
+  width: 580px;
 }
 
-.slider__icon {
+.slide__content {
 }
 
-.slider__title {
+.slide__icon {
 }
 
-.slider__description {
+.slide__title {
+}
+
+.slide__description {
 }
 
 .material-symbols-outlined {
