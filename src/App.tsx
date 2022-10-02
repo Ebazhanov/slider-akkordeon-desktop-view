@@ -1,6 +1,6 @@
 import React from "react";
 import "./App.css";
-import { SliderDesktop } from "./SliderDesktop";
+import { SliderDesktop } from "./components/SliderDesktop";
 
 function App() {
   return (
