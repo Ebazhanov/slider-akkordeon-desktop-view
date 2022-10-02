@@ -1,6 +1,14 @@
 import React, { useState } from "react";
+import "./SliderDesktop.css";
 
-export const sliderData = [
+type SliderData = {
+  slide: number;
+  icon: string;
+  description: string;
+  url: string;
+}[];
+
+const sliderData: SliderData = [
   {
     slide: 1,
     icon: "star",
@@ -33,12 +41,13 @@ export const sliderData = [
   },
 ];
 
-export const Slider = () => {
+export const SliderDesktop = () => {
   const [activeId, setActiveSlider] = useState(1);
   return (
     <div className="slider">
-      {sliderData.map((obj: any) => (
+      {sliderData.map((obj, index: number) => (
         <div
+          key={index}
           className={activeId === obj.slide ? "slide active" : "slide"}
           onClick={() => setActiveSlider(obj.slide)}
           style={{

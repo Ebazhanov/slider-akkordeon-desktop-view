@@ -1,1 +1,1 @@
-# Modern Slider
+# Modern SliderDesktop

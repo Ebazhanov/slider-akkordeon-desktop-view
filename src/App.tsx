@@ -1,11 +1,11 @@
 import React from "react";
 import "./App.css";
-import { Slider } from "./Slider";
+import { SliderDesktop } from "./SliderDesktop";
 
 function App() {
   return (
     <div className="App">
-      <Slider />
+      <SliderDesktop />
     </div>
   );
 }
