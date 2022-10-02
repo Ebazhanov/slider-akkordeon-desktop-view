@@ -36,7 +36,7 @@ const sliderData: SliderData = [
     icon: "help_center",
     iconColor: "magenta",
     description: "Food",
-    url: "https://images.unsplash.com/photo-1576506295286-5cda18df43e7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=435&q=80",
+    url: "https://images.unsplash.com/photo-1467224298296-81a33a3f3022?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1113&q=80",
   },
   {
     slide: 5,
@@ -48,7 +48,7 @@ const sliderData: SliderData = [
 ];
 
 export const SliderDesktop = () => {
-  const [activeId, setActiveSlider] = useState(1);
+  const [activeId, setActiveSlider] = useState(3);
   return (
     <div className="slider">
       {sliderData.map((obj, index: number) => (

@@ -9,19 +9,23 @@
 
 .slide {
   width: 59px;
-  background: center / cover;
+  background: center / auto 110%;
   border-radius: 32px;
   display: grid;
   position: relative;
   overflow: hidden;
   transition: all 0.3s ease-in-out;
   box-shadow: 0 0 0 rgba(0,0,0,0);
+  filter: saturate(50%);
+
 }
 
 .slide.active {
   width: 580px;
   height: calc(400px + 10px);
   box-shadow: 0 16px 32px rgba(0, 0,0, 0.7%);
+  background-size: auto 180%;
+  filter: saturate(100%);
 }
 
 .slide::before {
