@@ -51,7 +51,7 @@
   position: relative;
 }
 
-/*.slide.active.slide__content{
+/*.slide.active .slide__content{
   padding: 20px;
 }*/
 
@@ -72,9 +72,23 @@
 .slide__title {
   font-size: 18px;
   font-weight: bold;
+  transition: all 0.3s ease-in-out;
 }
 
 .slide__description {
+  transition: all 0.3s ease-in-out;
+}
+
+.slide__title, .slide__description{
+  transition: all 0.3s ease-in-out;
+  opacity: 0;
+  margin-left: 16px;
+}
+
+.slide.active .slide__title,
+.slide.active .slide__description{
+  opacity: 1;
+  margin-left: 0;
 }
 
 .material-symbols-outlined {
